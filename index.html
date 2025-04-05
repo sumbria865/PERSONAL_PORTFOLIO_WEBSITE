@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/7b49115170.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        
+        <nav>
+            <img src="Prinka.jpg" class="Prinka" width="50"height="24">
+            
+            <ul id="sidemenu()">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#porfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>  
+            
+                <i class="fa-sharp fa-solid fa-circle-xmark" onclick="closemanu()"></i>
+
+            </ul>
+            <i class="fa-solid fa-bars " onclick="openmenu()"></i>
+
+
+        </nav>
+
+
+        <div class="content">
+            <!-- Left Side: UI/UX Designer Text -->
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Prinka Rajput</span><br>From Jammu</h1>
+            </div>
+
+            <!-- Right Side: Profile Image -->
+            <div class="profile-image">
+                <img src="imageprinka.jpg" alt="Prinka's Picture">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+  <!---about for me start fromn here-->  
+<!--another header section for about ka liya-->
+<div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-column-1">
+           <img src="Prinka2.jpg" class="Prinka2">
+        </div>
+        <div class="about-column-2"> 
+        <h1 class="sub-title">About Me</h1> 
+        <p>My name is prinka.<br>I am from jammu.<br>I am a B.TECH student in sarder patel institute of technoloy in mumbia.<br>I have passed my 12th in govt.school with 90% marks.<br>And I get the PMSSS and I got the admission in spit college. </p>
+    <!--add another tab titles about experince,education and all-->
+        <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+            <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+            <p class="tab-links" onclick="opentab('education', event)">Education</p>
+            
+    </div>
+<!--we add the content which is present in the list-->
+<!--we will add one id here when we click that then it wilol show something that was why we add it-->    
+
+<div class="tab-contents active-tab" id="skills">
+    <ul>
+        <li><span>UI/UX</span><br>Designing web/app interfaces</li>
+<li><span>Web Development</span><br>Web app development</li>
+<li><span>Research & Development</span><br>Innovating and experimenting with tech solutions</li>
+
+    </ul>
+</div>
+
+<div class="tab-contents" id="experience">
+    <ul>
+        <li><span>2024-current</span><br>UI/UX Design training from YouTube.</li>
+        <li><span>2022-2023</span><br>Team lead at college projects.</li>
+        <li><span>2024-current</span><br>Research internship.</li>
+    </ul>
+</div>
+
+<div class="tab-contents" id="education">
+    <ul>
+        <li><span>2020-2021</span><br>Passed my 12th in government school with the first position in my school (90%).<br>Also won trophies for 10th, 11th, and 12th grades.</li>
+        <li><span>2021-2022</span><br>Started coding and solving real-world problems.</li>
+        <li><span>2022-2027</span><br>Pursuing B.Tech in Computer Science and Engineering from Mumbai.</li>
+    </ul>
+</div>
+
+
+</div>  
+</div>
+</div>
+</div>
+ <!---opentab is the function name-->
+ 
+ <!--here we add the javascript  for the click button-->
+
+ <!--abhi sevices ka liya div create karagaa-->
+<div id="services">
+    <div class="container">
+      <h1 class="sub-title">My services</h1>
+      <div class="services-list">
+
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>Web design is really helpful for todays workd.<br>It help us to create the website.<br> we can design the website and make the changes also.</p>
+           <a href="#">Learn more</a>
+        </div>
+        
+        <div>
+            
+
+            <i class="fa-sharp fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>Web design is really helpful for todays workd.<br>It help us to create the website.<br> we can design the website and make the changes also.</p>
+           <a href="#">Learn more</a>
+        </div>
+        <div>
+
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>Research </h2>
+<p>
+    This research focuses on developing a temperature-based scheduler for multicore processors.<br>
+    The goal is to enhance performance and energy efficiency by dynamically managing core workloads based on temperature.<br>
+    It contributes to smarter thermal management and improved system reliability in computing systems.
+</p>
+<a href="#">Learn more</a>
+
+        </div>
+    </div>
+</div>
+
+
+
+<!---third idar sa portfolio start hai kaam-->
+<div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1> 
+      <div class="work-list">
+        <div class="work">
+            <img src="work1.avif" alt="Typing Speed App Preview">
+            <div class="layer">
+                <h3>Keyboard</h3>
+                <p>The keyboard is helpful to improve our typing speed.Download it from play store.</p>
+                <a href="#"><i class="fa-sharp fa-solid fa-link"></i></a>
+            </div>
+        </div>
+    
+        <div class="work">
+            <img src="work2.avif" alt="Another Project">
+            <div class="layer">
+                <h3>Laptop</h3>
+                <p>The keyboard is helpful to improve our typing speed.Download it from play store.</p>
+                <a href="#"><i class="fa-sharp fa-solid fa-link"></i></a>
+            </div>
+        </div>
+    
+        <div class="work">
+            <img src="work3.jpg" alt="Final Project">
+            <div class="layer">
+                <h3>World</h3>
+                <p>solve the real world problems.Download it from the play store.</p>
+                <a href="#"><i class="fa-sharp fa-solid fa-link"></i></a>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn">See more</a>
+
+    
+    
+<!---idar sa content ka liya information start ho rah hai-->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+             
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-phone"></i> 9622271995</p>
+            <p><i class="fa-solid fa-share-from-square"></i> prinka2801@gmail.com</p>
+            <a href="https://drive.google.com/file/d/134480gB8hkk9TzyeMqTtbmpWJth_08wv/view?usp=drive_link" target="_blank" class="btn2">
+                📄 Download My Resume
+            </a>
+            
+
+
+    
+            <!--here  we add the social media links-->
+        <div class="social-icons">
+            <a href ="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href ="https://en.wikipedia.org/wiki/Twitter"><i class="fa-brands fa-twitter-square"></i></a>
+            <a href ="https://www.instagram.com/accounts/login/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+            <a href ="https://www.linkedin.com/messaging/thread/2-OWUwYzU0MmEtYTE0MC00ZTFhLTg1ZTctNWEwNjA0NjkzNGFiXzAxMA==/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <!--here we addd the  link to download my cv*-->
+        
+        </div>
+            <div class="contact-right">
+        <form name ="submit-to-google-sheet">
+
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="Email" name="Name" placeholder="Your Email" required>
+            <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn2">Submit</button>
+
+                </form> 
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="copyright">
+    <p>Prinka@gmail.com Made with<i class="fa-solid fa-heart"></i> y easy coding journey.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+ <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname, event) {
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    for (var tablink of tablinks) {
+        tablink.classList.remove("active-link");
+    }
+
+    for (var tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+    }
+
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+   
+
+}
+
+   
+
+
+    var sidemenu = document.getElementById("student");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-220px";
+    }
+
+    
+</script>
+<script>
+    function displayFormData() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+
+        console.log("Name: " + name);
+        console.log("Email: " + email);
+        console.log("Message: " + message);
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwZdrxvpgFqBOxLMqYxdPc_LJppK0ulbW3H3grG9sk-UbxadMD-CrmMSnp7dItC5DNm/exec'
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById('msg');  // Make sure you have a div with id "msg" to display the success message
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                msg.innerHTML = "Message sent successfully";
+                setTimeout(function() {
+                    msg.innerHTML = "";
+                }, 5000);
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message));
+    });
+</script>
+</body>
+</html>
